@@ -1,0 +1,9 @@
+.field{
+  height: 416px;
+  width: 416px
+}
+.square{
+  height: 80px;
+  width: 80px;
+  background-color: gray;
+}

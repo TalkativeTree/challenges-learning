@@ -1,0 +1,97 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: benjamin.b2@gmail.com
+Received: by 10.112.167.200 with SMTP id zq8csp374453lbb;
+        Thu, 16 Jan 2014 12:59:37 -0800 (PST)
+Return-Path: <ruben.abergel@gmail.com>
+Received-SPF: pass (google.com: domain of ruben.abergel@gmail.com designates 10.204.56.9 as permitted sender) client-ip=10.204.56.9
+Authentication-Results: mr.google.com;
+       spf=pass (google.com: domain of ruben.abergel@gmail.com designates 10.204.56.9 as permitted sender) smtp.mail=ruben.abergel@gmail.com;
+       dkim=pass header.i=@gmail.com
+X-Received: from mr.google.com ([10.204.56.9])
+        by 10.204.56.9 with SMTP id w9mr297519bkg.68.1389905977682 (num_hops = 1);
+        Thu, 16 Jan 2014 12:59:37 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:sender:date:message-id:subject:from:to:content-type;
+        bh=F9wYLEYljYwZICQSET9ZK7+hMIWfrWQX2GCuluQs8tY=;
+        b=ZnrGhx9WDk0H9uYav2xG40qQFdL5URNwIlIgoIFz4sDzdMBvwhZyyNUwILpEuxHJBj
+         26HLryi+pcPicsmhv8q0+HXe9tYBWitvWNDsS26mS4JNIkubGQdahVvmtMkoeLt6NdMc
+         NRR2NcJyIIQpVD8fXAX+6Hp2tl2LGVUq82ThNTB3M81INZvpGsMOvP68nZCVpwNRnt7w
+         fK32L//XC5oVR75m2jLF6gFx3AzrZsaWK5GOUVj2Ov+DVHZNCsAHcB5C1/SXHwi+G0jn
+         nXYeyEsMckSXo3yYXJmNSo6qdv25x0If6sCQE4gvoNHdHyQAxa/W04aL32xatiNNOGpU
+         /ZaA==
+MIME-Version: 1.0
+X-Received: by 10.204.56.9 with SMTP id w9mr170283bkg.68.1389905977337; Thu,
+ 16 Jan 2014 12:59:37 -0800 (PST)
+Sender: ruben.abergel@gmail.com
+Received: by 10.204.170.139 with HTTP; Thu, 16 Jan 2014 12:59:37 -0800 (PST)
+Date: Thu, 16 Jan 2014 12:59:37 -0800
+X-Google-Sender-Auth: ntsAZB0yMY8YdVUnSBQJVntlLtM
+Message-ID: <CAP2v5OBS+G797Pji_=M34oHaPSdiHqqy640hgKAyQXkp0uD2Ng@mail.gmail.com>
+Subject: Welcome to Hackerhours.com
+From: Ruben Abergel <team@hackerhours.com>
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=001a11c35a200d1ba304f01cb45d
+Bcc: benjamin.b2@gmail.com
+
+--001a11c35a200d1ba304f01cb45d
+Content-Type: text/plain; charset=ISO-8859-1
+
+Welcome to hackerhours.com
+
+hackerhours.com purpose is to enable you to meaningfully connect, share and
+collaborate with the people around you.
+
+Wether you are an advance programmer or just starting your first tutorial,
+everyone benefits from being surrounded by peers. Hacker hours are hacking
+sessions where people come with their own work but can help each other and
+collaborate, much better than being frustrated at home.
+
+hackerhours.com is a work in progress, and we would love to hear what you
+think. What is your hacking journey and how can you benefit from our
+service. We would love to hear your feedbacks and thoughts. Send us an
+email at team@hackerhours.com <tean@hackerhours.com>.
+
+Enjoy your day
+
+
+Ruben
+
+hackerhours.com
+
+--001a11c35a200d1ba304f01cb45d
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+
+
+
+
+
+
+
+<p class=3D""><span class=3D"">Welcome to <a href=3D"http://hackerhours.com=
+">hackerhours.com</a></span></p>
+<p class=3D""><a href=3D"http://hackerhours.com">hackerhours.com</a> purpos=
+e is to enable you to meaningfully connect, share and collaborate with the =
+people around you.=A0<br><span class=3D""></span></p>
+<p class=3D"">Wether you are an advance programmer or just starting your fi=
+rst tutorial, everyone benefits from being surrounded by peers. Hacker hour=
+s are hacking sessions where people come with their own work but can help e=
+ach other and collaborate, much better than being frustrated at home.=A0<br=
+>
+<span class=3D""></span></p>
+<p class=3D""><a href=3D"http://hackerhours.com">hackerhours.com</a> is a w=
+ork in progress, and we would love to hear what you think. What is your hac=
+king journey and how can you benefit from our service. We would love to hea=
+r your feedbacks and thoughts. Send us an email at <a href=3D"mailto:tean@h=
+ackerhours.com"><span class=3D"">team@hackerhours.com</span></a>. =A0<br>
+<span class=3D""></span></p>
+<p class=3D"">Enjoy your day=A0<br><span class=3D""></span></p>
+<p class=3D""><span class=3D""></span><br></p>
+<p class=3D""><span class=3D"">Ruben=A0</span></p>
+<p class=3D""><span class=3D""><a href=3D"http://hackerhours.com">hackerhou=
+rs.com</a>=A0</span></p></div>
+
+--001a11c35a200d1ba304f01cb45d--
