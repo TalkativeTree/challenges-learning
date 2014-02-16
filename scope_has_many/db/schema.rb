@@ -13,16 +13,15 @@
 
 ActiveRecord::Schema.define(version: 20140214025757) do
 
-  create_table "people", force: true do |t|
+  create_table "members", force: true do |t|
     t.boolean  "is_lead",    default: false
+    t.integer  "person_id"
+    t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "people_projects", force: true do |t|
-    t.boolean  "is_lead",    default: false
-    t.integer  "person_id"
-    t.integer  "project_id"
+  create_table "people", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
