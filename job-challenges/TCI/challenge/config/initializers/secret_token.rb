@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Programs::Application.config.secret_key_base = 'e4e66b92efa153544555eb7d5d806ce5c4bc2cc12eacbb9f5374d012dc6303e40fc24fb008f52a2bc4169198cb750108019e73f3e10e98641c9100f8d1d8a6df'
+Challenge::Application.config.secret_key_base = '3eb44f8b6a41e3d35d83caf5ad3be51b5f51451264410121be1e560229d2b06ac9058dd2e5aa83341eac85b581465ee27603b664d2aca1947e2638ea551370a7'
