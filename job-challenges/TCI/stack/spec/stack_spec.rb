@@ -1,4 +1,5 @@
 require "rspec"
+require "debugger"
 require_relative "../stack"
 
 describe Stack do
@@ -13,18 +14,17 @@ describe Stack do
     expect(stack.method(:level)).to be_true
   end
 
-  it "has #push" do
-    expect(stack.method(:push)).to be_true
-  end
-
-  it "has #level" do
-    expect(stack.method(:pop)).to be_true
-  end
-
   it "has #items" do
     expect(stack.method(:items)).to be_true
   end
 
+  it "has #push method" do
+    expect(stack.method(:push)).to be_true
+  end
+
+  it "has #pop method" do
+    expect(stack.method(:pop)).to be_true
+  end
   describe "#push" do
     it "#size equals 0 when no elements are in the stack" do
       expect(stack.size).to eq(0)
@@ -78,5 +78,7 @@ describe Stack do
       expect{ stack.pop }.to raise_error("Error: stack underflow.")
     end
   end
+
+
 
 end
