@@ -10,7 +10,8 @@ class Stack
     items.count
   end
 
-  def push
+  def push(item)
+    items.push(item) if level != items.count
   end
 
   def pop
