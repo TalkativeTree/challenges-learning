@@ -48,9 +48,34 @@ describe Stack do
       end
     end
 
-    it "doesn't insert if the array is already full" do
-      11.times {|val| stack.push(val)}
-      expect(stack.size).to eq(10)
+    it "pushes items to the end of the stack" do
+      8.times{ |val| stack.push(val) }
+      expect(stack.items[7]).to eq(7)
+    end
+
+    it "raises a Stack overflow error if you try to push into a full stack" do
+      10.times{ |val| stack.push(val) }
+      expect{ stack.push(11) }.to raise_error("Error: stack overflow.")
+    end
+  end
+
+  describe "#pop" do
+    it "decrements size bt -1" do
+      8.times{ |val| stack.push(val) }
+      8.times do
+        prev_val = stack.size
+        stack.pop
+        expect(stack.size).to eq(prev_val - 1)
+      end
+    end
+
+    it "removes the last value from items" do
+      8.times{ |val| stack.push(val) }
+      expect(stack.pop).to eq(7)
+    end
+
+    it "raises a Stack underflow error if you try to push into a full stack" do
+      expect{ stack.pop }.to raise_error("Error: stack underflow.")
     end
   end
 
