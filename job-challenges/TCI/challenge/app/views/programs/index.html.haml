@@ -1,0 +1,18 @@
+%h3 Programs
+
+%table.table.table-bordered
+  %thead
+    %tr
+      %th #
+      %th Title
+      %th Subtitle
+      %th Code
+    %tbody
+      - @programs.each do |program|
+        %tr
+          %td= program.id
+          %td= program.name
+          %td= program.category.name
+          %td
+            = link_to "Edit", edit_program_path(program)
+            = link_to "Delete", program_path(program), :method => :delete, :data => { :confirm => "Are you sure?" }
