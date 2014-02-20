@@ -27,6 +27,16 @@ class ProgramsController < ApplicationController
     end
   end
 
+  def update
+    @program = Programs.where(id: params[:id]).take
+    if @program.update_attributes(program_params)
+      flash[:notice] = "Successfully updated #{@program.title}"
+      redirect_to program_path(@program)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def program_params

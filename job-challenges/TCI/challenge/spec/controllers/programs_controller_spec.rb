@@ -62,7 +62,7 @@ describe ProgramsController do
 
       it "redirects to programs #show" do
         post :create, program: attributes_for(:programs)
-        expect(response).to redirect_to program_path( Programs.last)
+        expect(response).to redirect_to program_path(Programs.last)
       end
     end
 
@@ -77,6 +77,35 @@ describe ProgramsController do
       it "re-renders the :new template" do
         post :create, program: attributes_for(:programs, code: "123")
         expect(response).to render_template :new
+      end
+    end
+  end
+
+  describe 'PATCH #update' do
+    context "with valid attributes" do
+      it "updates the program in the database" do
+        patch :update, id: @program, program: attributes_for(:programs, title: "Changed")
+        @program.reload
+        expect( @program.title). to eq("Changed")
+      end
+
+      it "redirects to the program" do
+        patch :update, :id => @program.id,
+                     :program => { :name => "Changed"}
+        expect(response).to redirect_to @program
+      end
+    end
+
+    context "with invalid attributes" do
+      it "does not update the program" do
+        patch :update, id: @program, program: attributes_for(:programs, code: "123")
+        @program.reload
+        expect(@program.code).to_not eq("123")
+      end
+
+      it "re-renders the #edit template" do
+        patch :update, id: @program, program: attributes_for(:programs, code: "123")
+        expect(response).to render_template :edit
       end
     end
   end
