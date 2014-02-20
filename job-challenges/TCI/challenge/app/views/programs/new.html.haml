@@ -1,0 +1,18 @@
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
+      = "#{@program.title}: #{@program.subtitle}"
+  .panel-body
+    = form_for @program, :url => program_path do |f|
+      .form-group
+        = f.label :title
+        = f.text_field :title, :class => "form-control"
+      .form-group
+        = f.label :subtitle
+        = f.text_field :subtitle, :class => "form-control"
+      .form-group
+        = f.label :code
+        = f.text_field :code, :class => "form-control"
+
+      .form-group
+        = f.submit :class => "btn btn-success"
