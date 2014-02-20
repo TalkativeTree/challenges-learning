@@ -17,4 +17,15 @@ describe ProgramsController do
     end
   end
 
+  describe 'GET #show' do
+    it "assigns the requested program to @program" do
+      get :show, id: @program.id
+      expect(assigns(:program)).to eq @program
+    end
+
+    it "renders the :show template" do
+      get :show, id: @program.id
+      expect(response).to render_template :show
+    end
+  end
 end
