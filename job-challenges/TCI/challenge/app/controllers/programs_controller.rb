@@ -7,6 +7,26 @@ class ProgramsController < ApplicationController
     @program = Programs.where(id: params[:id]).take
   end
 
+  def edit
+    @program  = Programs.where(id: params[:id]).take
+  end
+
+  def new
+    @program = Programs.new
+  end
+
+  def create
+    @program = Programs.new(program_params)
+
+    if @program.save
+      flash[:notice] = "#{@program.title} sucessfully created!"
+      redirect_to program_path(@program)
+    else
+      @errors = @program.errors.full_messages
+      render :new
+    end
+  end
+
   private
 
   def program_params
