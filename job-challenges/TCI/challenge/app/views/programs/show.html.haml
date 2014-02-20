@@ -1,0 +1,6 @@
+.program
+  .title= @program.title
+  .sub= @program.subtitle
+  .code= @program.code
+  = link_to "Edit", edit_program_path(program)
+  = link_to "Delete", program_path(program), :method => :delete, :data => { :confirm => "Are you sure?" }
