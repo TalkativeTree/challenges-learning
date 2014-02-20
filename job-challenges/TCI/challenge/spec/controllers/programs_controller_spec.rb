@@ -11,6 +11,7 @@ describe ProgramsController do
       get :index
       expect(assigns(:programs)).to match_array([@program])
     end
+
     it "renders the :index template" do
       get :index
       expect(response).to render_template :index
@@ -46,6 +47,7 @@ describe ProgramsController do
       get :new
       expect(assigns(:program)).to be_a_new(Programs)
     end
+
     it "renders the :new template" do
       get :new
       expect(response). to render_template :new
@@ -109,4 +111,18 @@ describe ProgramsController do
       end
     end
   end
+
+  describe 'DELETE #destroy' do
+    it "deletes the program from the database" do
+      expect{
+        delete :destroy, id: @program
+      }.to change(Programs, :count).by(-1)
+    end
+
+    it "redirects to users #index" do
+      delete :destroy, id: @program
+      expect(response).to render_template :index
+    end
+  end
+
 end

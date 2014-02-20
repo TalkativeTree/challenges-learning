@@ -33,8 +33,15 @@ class ProgramsController < ApplicationController
       flash[:notice] = "Successfully updated #{@program.title}"
       redirect_to program_path(@program)
     else
+      @errors = @program.errors.full_messages
       render :edit
     end
+  end
+
+  def destroy
+    Programs.delete(params[:id])
+
+    render :index, notice: "Program sucessfully deleted."
   end
 
   private
