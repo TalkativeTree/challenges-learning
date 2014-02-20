@@ -3,7 +3,7 @@ class CreatePrograms < ActiveRecord::Migration
     create_table :programs do |t|
       t.string :title
       t.string :subtitle
-      t.string :code, "char(6)"
+      t.column :code, "char(6)"
 
       t.timestamps
     end
